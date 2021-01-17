@@ -13,6 +13,19 @@
 **NOTE: 下载windows分支**
 - caffe/scripts/build_win.cmd
 ```
+    :: 使用的是那个Python版本就配置哪个路径
+    :: Set python 2.7 with conda as the default python
+    if !PYTHON_VERSION! EQU 2 (
+        set CONDA_ROOT=C:\Miniconda-x64
+    )
+    :: Set python 3.5 with conda as the default python
+    if !PYTHON_VERSION! EQU 3 (
+        set CONDA_ROOT=C:\Miniconda\envs\py35
+    )
+    set PATH=!CONDA_ROOT!;!CONDA_ROOT!\Scripts;!CONDA_ROOT!\Library\bin;!PATH!
+
+    ...部分行之后
+
     :: Change the settings here to match your setup
     :: Change MSVC_VERSION to 12 to use VS 2013
     :: vs2015对应的是14
@@ -49,6 +62,7 @@
     if NOT DEFINED RUN_INSTALL set RUN_INSTALL=0
 
     ...很多行之后，大概在160行左右的位置
+
     :: Configure using cmake and using the caffe-builder dependencies
     :: Add -DCUDNN_ROOT=C:/Projects/caffe/cudnn-8.0-windows10-x64-v5.1/cuda ^
     :: below to use cuDNN
@@ -73,3 +87,19 @@
 直接双击```caffe/scripts/build_win.cmd```文件，不闪退，能正常cmake说明ok；
 - 方式二
 cmd打开，切换到scripts目录，然后输入```build_win.cmd```就能运行。
+
+# 编译Caffe
+- 编译
+用vs2015打开```caffe/scripts/build/Caffe.sln```，然后```生成```，选择```all_build```；   
+正常情况下，没有失败项目就算ok；  
+- c++结果   
+头文件位置：caffe/include
+动态库：caffe/scripts/build/tools/Release
+源码：caffe/src/caffe
+- python结果   
+caffe/python里面有caffe模块和部分测试代码
+
+# 测试
+- python   
+最方便就是将caffe/python加入到系统的PYTHONPATH中，然后进cmd的python环境，输入```import caffe```不报错就ok； 
+- c++   
