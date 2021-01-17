@@ -19,3 +19,16 @@ C:\Miniconda\envs\py35\Scripts
 C:\Miniconda\envs\py35\Library\bin
 C:\Miniconda\envs\py35\Library\mingw-w64\bin
 ```
+
+# VS2015生成自定义没有cuda选项
+将cuda安装路径
+```
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\visual_studio_integration\MSBuildExtensions
+```
+下的所有文件拷贝到
+```
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\BuildCustomizations
+```
+即可解决。
+
+
