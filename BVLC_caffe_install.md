@@ -7,6 +7,10 @@
 - cuda8.0
 - cuDNNv7.1
 
+本人编译使用的软件和其他相关的大文件放baidu云盘了，可供下载：   
+[链接](https://pan.baidu.com/s/1ZiL1Q6tLwvrfneuKGFkfSA)   
+提取码：q80t 
+
 # 源码及依赖配置
 - 源码   
 [github_link](https://github.com/BVLC/caffe/tree/windows)   
@@ -86,7 +90,8 @@
 - 方式一   
 直接双击```caffe/scripts/build_win.cmd```文件，不闪退，能正常cmake说明ok；
 - 方式二
-cmd打开，切换到scripts目录，然后输入```build_win.cmd```就能运行。
+cmd打开，切换到scripts目录，然后输入```build_win.cmd```就能运行。   
+**NOTE: 有个比较难下载的依赖项，放在开头给出的baidu云链接了，供下载使用**
 
 # 编译Caffe
 - 编译
@@ -103,3 +108,4 @@ caffe/python里面有caffe模块和部分测试代码
 - python   
 最方便就是将caffe/python加入到系统的PYTHONPATH中，然后进cmd的python环境，输入```import caffe```不报错就ok； 
 - c++   
+[reference_link](https://github.com/sophia-hxw/WinCaffeYolov4/tree/main/yolov4_gpu)
