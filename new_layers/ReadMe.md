@@ -32,4 +32,4 @@ message UpsampleParameter{
 
 # 重新编译
 前面操作完成后，重新生成Caffe.sln及再次编译caffe即可。   
-[ref_link]()
+[ref_link](https://github.com/sophia-hxw/WinCaffeYolov4/blob/main/BVLC_caffe_install.md)

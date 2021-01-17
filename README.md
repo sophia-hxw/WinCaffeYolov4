@@ -1,9 +1,9 @@
 # WinCaffeYolov4
 ## 编译BVLC原版的caffe
-[install steps](https://github.com/sophia-hxw/WinCaffeYolov4/blob/main/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%89%88caffe.md)
+[install steps](https://github.com/sophia-hxw/WinCaffeYolov4/blob/main/BVLC_caffe_install.md)
 
 ## 新增mish层和upsample层
-[add new layer]()
+[add new layer](https://github.com/sophia-hxw/WinCaffeYolov4/tree/main/new_layers)
 
 ## 参考文献
 - https://github.com/BVLC/caffe
