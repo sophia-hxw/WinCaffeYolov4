@@ -95,9 +95,9 @@ ntdll.lib
 ```
 
 # vs环境与CUDA相关部分
-- 使用cuda编译
-项目右键->生成依赖项->生成自定义
-勾选CUDA 8.0(.targets, .props)
-- 对所有cu文件
-文件右键->属性
-常规->项类型->CUDA C/C++
+- 使用cuda编译   
+项目右键->生成依赖项->生成自定义   
+勾选CUDA 8.0(.targets, .props)   
+- 对所有cu文件   
+文件右键->属性   
+常规->项类型->CUDA C/C++   
